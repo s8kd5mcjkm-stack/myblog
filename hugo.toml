@@ -1,0 +1,70 @@
+baseURL = "https://s8kd5mcjkm-stack.github.io/myblog/"
+title = "我的博客"
+theme = "jane"
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableEmoji = true
+rssLimit = 20
+
+defaultContentLanguage = "zh-cn"
+
+[languages.zh-cn]
+  locale = "zh-cn"
+  languageName = "中文"
+  weight = 1
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[pagination]
+  pagerSize = 8
+
+[[menu.main]]
+  name = "首页"
+  weight = 10
+  identifier = "home"
+  pageref = "/"
+[[menu.main]]
+  name = "文章"
+  weight = 20
+  identifier = "archives"
+  pageref = "/post/"
+[[menu.main]]
+  name = "标签"
+  weight = 30
+  identifier = "tags"
+  pageref = "/tags/"
+[[menu.main]]
+  name = "关于"
+  weight = 40
+  identifier = "about"
+  pageref = "/about/"
+
+[params]
+  since = "2026"
+  homeFullContent = false
+  rssFullContent = true
+
+  author.name = "博主"
+  author.email = "me@example.com"
+
+  logoTitle = "我的博客"
+  keywords = ["博客", "技术", "生活", "Hugo"]
+  description = "一个基于 Hugo 和 Jane 主题的中文个人博客"
+
+  dateFormatToUse = "2006-01-02"
+
+  toc = true
+  photoswipe = true
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  customCSS = []
+  customJS = []
+
+  [params.social]
+    g-github = "https://github.com/"
+    h-weibo = ""
+    i-zhihu = ""
+    q-bilibili = ""
